@@ -34,7 +34,7 @@ const Wrapper = styled.header`
 const Title = styled.p`
   color: ${IVORY};
   font-size: 1.4rem;
-  margin: 0.4rem auto 0;
+  margin: 0 auto;
 `;
 
 const Button = styled.button`
