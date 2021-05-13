@@ -15,9 +15,9 @@ export const useLocation = () => {
     const container = document.getElementById('kakaomap');
     const options = {
       center: new kakao.maps.LatLng(37.564214, 127.001699),
-      level: 7,
+      level: 4,
     };
-    const map = new window.kakao.maps.Map(container, options);
+    const map = new kakao.maps.Map(container, options);
 
     if (!navigator.geolocation) {
       alert('GPS를 지원하지 않습니다');
@@ -27,8 +27,10 @@ export const useLocation = () => {
     const successCallback = ({ coords: { latitude, longitude } }) => {
       setLatitude(latitude);
       setLongitude(longitude);
-      const moveLatLon = new kakao.maps.LatLng(latitude, longitude);
-      map.setCenter(moveLatLon);
+      const markerPosition = new kakao.maps.LatLng(latitude, longitude);
+      const marker = new kakao.maps.Marker({ position: markerPosition });
+      marker.setMap(map);
+      map.setCenter(markerPosition);
     };
 
     const errorCallback = (error) => {
