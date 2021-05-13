@@ -1,9 +1,4 @@
-import React, {
-  ReactNode,
-  ReactNodeArray,
-  useState,
-  useLayoutEffect,
-} from 'react';
+import React, { ReactNode, ReactNodeArray, useState, useEffect } from 'react';
 
 import GlobalHeader from './header';
 import GlobalSidebar from './sidebar';
@@ -15,7 +10,7 @@ export type GlobalLayoutProps = {
 export default function GlobalLayout({ children }: GlobalLayoutProps) {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (window.innerWidth <= 1024) {
       setSidebarOpen(false);
     }
