@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "pretty": "prettier --write \"src/**/*.(ts|tsx)\"",
+    "tsc": "tsc"
   },
   "dependencies": {
     "dotenv": "^9.0.2",
