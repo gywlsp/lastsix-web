@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import { useSearchPlaces } from 'src/hooks/search';
+import { useSearchPlaces } from 'src/hooks/api/search-place';
 import NavButton from './navigation-button';
 import Form from './search-form';
 import ResultItem from './search-result';
