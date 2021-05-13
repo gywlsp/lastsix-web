@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import { GREY } from 'src/constants/colors';
@@ -6,8 +6,10 @@ import { GREY } from 'src/constants/colors';
 export default function PinInfo() {
   const renderInfo = () =>
     information.map((item) => (
-      <InfoWrapper key={item.text}>
-        <Img src={item.pin}></Img>
+      <InfoWrapper>
+        <ImgWrapper>
+          <Img src={item.pin} />
+        </ImgWrapper>
         <Text>{item.text}</Text>
       </InfoWrapper>
     ));
@@ -31,7 +33,8 @@ const information = [
 ];
 
 const Wrapper = styled.div`
-  margin-top: 0.8rem;
+  padding: 0.4rem 0 0.6rem;
+  margin-top: 1rem;
   border: 0.2rem solid ${GREY[200]};
   border-radius: 0.2rem;
 `;
@@ -43,10 +46,16 @@ const InfoWrapper = styled.div`
   padding: 0.1rem 1rem;
 `;
 
+const ImgWrapper = styled.div`
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-right: 0.4rem;
+`;
+
 const Img = styled.img`
-  width: 1.6rem;
   height: 2rem;
-  margin-right: 0.2rem;
+  margin: 0 auto;
 `;
 
 const Text = styled.p``;

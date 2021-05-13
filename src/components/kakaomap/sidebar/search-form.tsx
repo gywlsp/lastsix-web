@@ -44,7 +44,7 @@ export default SearchForm;
 
 const Form = styled.form`
   display: flex;
-  margin: 1rem 0;
+  margin: 0.4rem 0 1rem;
 `;
 
 const Input = styled.input`

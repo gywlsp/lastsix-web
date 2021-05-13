@@ -42,7 +42,7 @@ export default function LocationDetailModal() {
   return (
     <Overlay onClick={initSelectedHpid}>
       <Wrapper>
-        <Name>{name}</Name>
+        <Name>📌 {name}</Name>
         <Row>
           <Label>주소</Label>
           <Text>{addr}</Text>
