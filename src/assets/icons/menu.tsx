@@ -7,7 +7,7 @@ export default function MenuIcon({ style = {}, fill = IVORY }: IconProps) {
   return (
     <svg
       fill={fill}
-      style={{ width: '5rem', height: '5rem', ...style }}
+      style={{ width: '2.8rem', height: '2.8rem', ...style }}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50 50"
     >

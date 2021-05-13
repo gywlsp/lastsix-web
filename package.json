@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "pretty": "prettier --write \"src/**/*.(ts|tsx)\"",
     "tsc": "tsc"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.12.0",
     "dotenv": "^9.0.2",
     "next": "10.2.0",
     "react": "17.0.2",

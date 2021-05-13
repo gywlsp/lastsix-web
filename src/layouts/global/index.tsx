@@ -1,18 +1,21 @@
-import React, { ReactNode, ReactNodeArray, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 import GlobalHeader from './header';
 import GlobalSidebar from './sidebar';
+import { LayoutProps } from '..';
 
-export type GlobalLayoutProps = {
-  children: ReactNode | ReactNodeArray;
-};
+export default function GlobalLayout({ children }: LayoutProps) {
+  const router = useRouter();
+  const { pathname } = router;
 
-export default function GlobalLayout({ children }: GlobalLayoutProps) {
-  const [isSidebarOpen, setSidebarOpen] = useState(true);
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+  const isHome = pathname === '/';
 
   useEffect(() => {
-    if (window.innerWidth <= 1024) {
-      setSidebarOpen(false);
+    if (window.innerWidth > 1024) {
+      setSidebarOpen(true);
     }
   }, []);
 
@@ -20,10 +23,17 @@ export default function GlobalLayout({ children }: GlobalLayoutProps) {
     setSidebarOpen(!isSidebarOpen);
   };
 
+  const handleHeaderLeftButtonClick = isHome ? toggleSidebar : router.back;
+
   return (
     <>
-      <GlobalHeader toggleSidebar={toggleSidebar} />
-      <GlobalSidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      <GlobalHeader
+        isHome={isHome}
+        onLeftButtonClick={handleHeaderLeftButtonClick}
+      />
+      {isHome && (
+        <GlobalSidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      )}
       {children}
     </>
   );
