@@ -1,7 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import styled from 'styled-components';
 
-// case.html로 만든부분 리액트로 변경해봤는데 수정해야될 부분 있다면 바로바로 수정하겠습니다..!
+const CaseRootStyle = styled.img`
+    margin: 0 auto;
+    width: 70%;
+`;
+
+const CaseBoxStyle = styled.div`
+    position: relative; 
+`;
+
+const CaseImgStyle = styled.div`
+    background-image: url(${props => props.background});
+    width: 85%;
+    left: 0%;
+`;
+
+const CaseTextBoxStyle = styled.div`
+    margin: 0;
+    display: table;
+    text-align: right;
+    position:absolute;
+    height: 100%;
+    width: 60%;
+    top: 0%;
+    right: 0%;
+    background: linear-gradient( to right, #FFFFFF00,#FFFFFF89,#FFFFFFFE, white );
+`;
+
+const CaseTextStyle = styled.p`
+    display: table-cell;
+    vertical-align: middle;
+`;
+
 function getCases() {
   const cases = [{
     url : "https://lh3.googleusercontent.com/proxy/2Q6qmHVZl934O-aMIQqqY3Bk9TmdFubNYQhC1DOCtDAn6ysPKeByLv7dcuxjHx-KjLbjfov0NwiQokgSUT0WFHM_F5X9bCEF2r9AP-ectnxkWKG_6FTwFhmnnlrzZwFb2MNJxE7oGJpEHmljVO32-3DBhfbQswSAuOTi3N1T6v35emIh407OwBILXDKLVQxY4t0ttaTdn1J0EMqmSfbBXfbMTmtCzf_anA6KBZY_2GqJLuu1qL_3o3p2aOR3FcUGmyp3-lANQbbRZTOzwWXQzn42PSWFiGNdwKX8pxNBJKHZLKp_W3PEMfRPLFUheo-klE4FRLvk6cEmLKG4e7vPHAKKiw",
@@ -21,20 +53,14 @@ function getCases() {
     const result = [];
     for (let i = 0; i < cases.length; i++) {
       result.push(
-        <div class = "case">
-        <img src = {cases[i].url}/>
-        <div><p>{cases[i].text}</p></div>
-      </div>  
+        <CaseBoxStyle>
+          <CaseImgStyle background = {cases[i].url}/>
+          <CaseTextBoxStyle><CaseTextStyle>{cases[i].text}</CaseTextStyle></CaseTextBoxStyle>
+        </CaseBoxStyle>  
       );
     }
     return result;
   };
 
-  return <div>{rendering()}</div>;
+  return <CaseRootStyle>rendering()</CaseRootStyle>;
 }
-const element = <div>{getCases()}</div>
-
-ReactDOM.render(
-  element,
-  document.getElementById('root')
-);
