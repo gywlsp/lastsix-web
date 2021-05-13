@@ -1,12 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useLocation } from 'src/hooks/location';
 
 import GlobalLayout from 'src/layouts/global';
 import LoadingOverlay from './loading/overlay';
 
+import { useMapContext, withMapContext } from 'src/contexts/Map';
+
 function KakaoMap() {
-  const { latitude, longitude } = useLocation();
+  const {
+    state: { latitude, longitude },
+  } = useMapContext();
 
   return (
     <GlobalLayout>
@@ -16,7 +19,7 @@ function KakaoMap() {
   );
 }
 
-export default KakaoMap;
+export default withMapContext(KakaoMap);
 
 const Map = styled.div`
   width: 100vw;
