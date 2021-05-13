@@ -6,7 +6,11 @@ import NavButton from './navigation-button';
 import Form from './search-form';
 import ResultItem from './search-result';
 
-function SideBar() {
+export type SidebarContentProps = {
+  toggleSidebar: () => void;
+};
+
+export default function SidebarContent({ toggleSidebar }: SidebarContentProps) {
   const [query, setQuery] = useState<string>('');
 
   const searchResult = useSearchPlaces(query);
@@ -22,8 +26,9 @@ function SideBar() {
             : result.address_name
         }
         latitude={result.y}
-        longtitude={result.x}
-      ></ResultItem>
+        longitude={result.x}
+        toggleSidebar={toggleSidebar}
+      />
     ));
 
   return (
@@ -39,8 +44,6 @@ function SideBar() {
     </Wrapper>
   );
 }
-
-export default SideBar;
 
 const Wrapper = styled.div`
   width: 100%;
