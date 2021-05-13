@@ -13,7 +13,7 @@ export const list = async (
   axios(listConfig(params)).then((res) => res.data);
 
 export const read = async (
-  id: number
+  id: string
 ): Promise<{ msg: string; result: DisposalLocationResponse }> =>
   axios(readConfig(id)).then((res) => res.data);
 

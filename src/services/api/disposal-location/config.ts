@@ -5,4 +5,4 @@ import { DisposalLocationListRequestParams } from 'src/types/disposal-location';
 export const listConfig = (params: DisposalLocationListRequestParams) =>
   baseConfig().get('/', { params });
 
-export const readConfig = (id: number) => baseConfig().get(`/${id}`);
+export const readConfig = (id: string) => baseConfig().get(`/${id}`);
