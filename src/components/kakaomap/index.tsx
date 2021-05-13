@@ -5,7 +5,7 @@ import GlobalLayout from 'src/layouts/global';
 import LoadingOverlay from './loading/overlay';
 import LocationDetailModal from './location-modal';
 
-import { useMapContext, withMapContext } from 'src/contexts/Map';
+import { useMapContext, withMapContext } from 'src/contexts/map';
 
 function KakaoMap() {
   const {
