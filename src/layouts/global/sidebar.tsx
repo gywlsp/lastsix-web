@@ -17,7 +17,7 @@ export default function GlobalSidebar({
     <Overlay isOpen={isOpen}>
       <Space onClick={toggleSidebar} />
       <Wrapper isOpen={isOpen}>
-        <SideBarContent />
+        <SideBarContent toggleSidebar={toggleSidebar} />
       </Wrapper>
     </Overlay>
   );

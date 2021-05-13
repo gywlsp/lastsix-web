@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { GREY, WHITE } from 'src/constants/colors';
 
-import { useMapContext } from 'src/contexts/Map';
+import { useMapContext } from 'src/contexts/map';
 import { useDisposalLocation } from 'src/hooks/api/disposal-location';
 
 const dayEngList = ['mon', 'tue', 'wed', 'thur', 'fri', 'sat', 'sun'];

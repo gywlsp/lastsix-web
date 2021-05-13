@@ -18,7 +18,7 @@ const BoxWrapper = styled.div`
   position: relative;
   width: 80%;
   height: 100%;
-  margin : 1rem auto;
+  margin: 1rem auto;
 `;
 
 const Image = styled.img`
@@ -38,7 +38,14 @@ const TextWrapper = styled.div`
   width: 70%;
   top: 0%;
   right: 0%;
-  background: linear-gradient(to right, #ffffff00, #ffffff80, #ffffffAA, #ffffffDF, white);
+  background: linear-gradient(
+    to right,
+    #ffffff00,
+    #ffffff80,
+    #ffffffaa,
+    #ffffffdf,
+    white
+  );
 `;
 
 const StyledText = styled.p`
