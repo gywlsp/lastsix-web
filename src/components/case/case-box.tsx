@@ -16,7 +16,8 @@ export default function CaseBox({ url, text }: CaseProps) {
 
 const BoxWrapper = styled.div`
   position: relative;
-  width: 80%;
+  width: 100%;
+  max-width: 720px;
   height: 100%;
   margin: 1rem auto;
 `;
