@@ -8,5 +8,8 @@ export interface IMapContext {
     disposalLocations: DisposalLocationListResponse;
     selectedHpid: string;
   };
-  action: { setSelectedHpid: React.Dispatch<React.SetStateAction<string>> };
+  action: {
+    setSelectedHpid: React.Dispatch<React.SetStateAction<string>>;
+    updateMap: (lat: number, lng: number) => Promise<void>;
+  };
 }

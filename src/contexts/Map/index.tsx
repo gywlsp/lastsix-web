@@ -52,18 +52,7 @@ export const withMapContext =
       }
 
       const successCallback = async ({ coords: { latitude, longitude } }) => {
-        setLatitude(latitude);
-        setLongitude(longitude);
-        const { result } = await DisposalLocationService.list({
-          lat: latitude,
-          lng: longitude,
-          limit: 10,
-        });
-        setDisposalLocations(result);
-        if (!kakaomap) {
-          return;
-        }
-        setMarkers({ latitude, longitude }, result);
+        updateMap(latitude, longitude);
       };
 
       const errorCallback = (error) => {
@@ -76,6 +65,21 @@ export const withMapContext =
         POSITION_OPTIONS
       );
     }, [kakaomap]);
+
+    const updateMap = async (lat: number, lng: number) => {
+      setLatitude(lat);
+      setLongitude(lng);
+      const { result } = await DisposalLocationService.list({
+        lat,
+        lng,
+        limit: 10,
+      });
+      setDisposalLocations(result);
+      if (!kakaomap) {
+        return;
+      }
+      setMarkers({ latitude: lat, longitude: lng }, result);
+    };
 
     const setMarkers = (userLocation, disposalLocations) => {
       const { kakao } = window;
@@ -134,7 +138,7 @@ export const withMapContext =
         disposalLocations,
         selectedHpid,
       },
-      action: { setSelectedHpid },
+      action: { setSelectedHpid, updateMap },
     };
 
     return (
