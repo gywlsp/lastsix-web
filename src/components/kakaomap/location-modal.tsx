@@ -55,7 +55,7 @@ export default function LocationDetailModal() {
           <Label>운영시간</Label>
           <div>
             {operationTime.map((time, index) => (
-              <Row>
+              <Row key={time}>
                 <Day>{dayKorList[index]}</Day>
                 <Text>{time}</Text>
               </Row>

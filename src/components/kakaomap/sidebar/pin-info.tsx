@@ -6,7 +6,7 @@ import { GREY } from 'src/constants/colors';
 export default function PinInfo() {
   const renderInfo = () =>
     information.map((item) => (
-      <InfoWrapper>
+      <InfoWrapper key={item.text}>
         <Img src={item.pin}></Img>
         <Text>{item.text}</Text>
       </InfoWrapper>
