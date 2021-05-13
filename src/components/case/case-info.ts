@@ -5,20 +5,24 @@ export type CaseProps = {
 
 const CASES = [
   {
-    url: 'https://lh3.googleusercontent.com/proxy/2Q6qmHVZl934O-aMIQqqY3Bk9TmdFubNYQhC1DOCtDAn6ysPKeByLv7dcuxjHx-KjLbjfov0NwiQokgSUT0WFHM_F5X9bCEF2r9AP-ectnxkWKG_6FTwFhmnnlrzZwFb2MNJxE7oGJpEHmljVO32-3DBhfbQswSAuOTi3N1T6v35emIh407OwBILXDKLVQxY4t0ttaTdn1J0EMqmSfbBXfbMTmtCzf_anA6KBZY_2GqJLuu1qL_3o3p2aOR3FcUGmyp3-lANQbbRZTOzwWXQzn42PSWFiGNdwKX8pxNBJKHZLKp_W3PEMfRPLFUheo-klE4FRLvk6cEmLKG4e7vPHAKKiw',
+    url: 'https://t1.daumcdn.net/cfile/blog/186A67434D93CCD91F',
+    text: '토양/수질 오염',
+  },
+  {
+    url: 'https://pbs.twimg.com/media/EnWRh8qXYAEge95.jpg',
+    text: '많은 수의 돌고래에서 항생제 내성 증가',
+  },
+  {
+    url: 'https://lh3.googleusercontent.com/proxy/4Q5FQ-yoo30mK5HcKTHVrh6Hr7jlfyV7ZAufb85BunrJFzNk61hY5THEJXSA6Tb9SjLB014CZIa0-s46CX8ZffQi27HF1Oyo3vGjslQBRzSD0RJ23x1HJS2XomJoh7W8pJhH75MeO0tNKiUGgRTmKD_FihVmE1vDhA4UttybhIwnSTGs7q1EjM_wruoAmcUGg1XzIFblyF_cOxgz2fBFhDPzqKqLZqaibFtDiYRA07LpDDXl1uEF9dehuHRzt_DIsbAeW4zACN8VYcYJ_Y-uznym12q9f-BGoue0-GFA0VmqOiAw0KmHDesQD_m6qKRbKUwwDYPOtKjHo1EAs4BFQnaDYsj4CKWt8xqBs72QLYPe1Ukw-45QR2WsJw',
     text: '슈퍼박테리아 양산',
   },
   {
-    url: 'https://lh3.googleusercontent.com/proxy/mfp9KwZS2Dd9g6iXKnFMwHolu63H9vS4Soa8_yQoiwvJJD1lzON3l_ynn5Q24E_XjFN6Qe-uQaojJvqnSvC1eL14Mf7TJtAlSx73snCjfaXhHUDOuYdGglKDBD57TQFKPsqsYGd4l8y3BkU',
+    url: 'https://lh3.googleusercontent.com/proxy/cD8pBcKCZMt0hR7wXtBBPf-wxPvBUs8HEnmpybb8RXtJBHlIlOHbgKBROui8XMqWPx9O6zIfz8SKpUyAAiuH0rKFO0ngkt6eS1tBNQqyyow5vNUvnO_XfNb2v1L2wIlr7PyxPQbasXlFZ6c',
     text: '어류 개체 수에 영향',
   },
   {
-    url: 'https://lh3.googleusercontent.com/proxy/7LcDhysHKEIBwfwrLBcPks_n9AoFgvDbQCPLwIycd-6LRzHMZnsJMBJwTPF5i_CuEQvciO_3Ie9tBnMysRm8DMltxE3wwdi2HDv1LglVZ-LgvUKz_3a6HZYYsQJbqt1o1hIQ5pvmuy7MNQ',
+    url: 'https://lh3.googleusercontent.com/proxy/hIZrBu5ry7ARATKob-V9EkPe6ZHZuv0zZVc-ocyR70UPD8PdCuolJyqztRFQyhA_faeeO0bICpsbRq5NJ8Qjhmu7y7HqdhgheNEINRr-3Uc6EgCgIu2X-qhGASZMCRtWze473dPrEysZbA',
     text: '물고기 중성 변이',
-  },
-  {
-    url: 'https://www.wallpaperkiss.com/wimg/b/201-2016905_big.jpg',
-    text: '많은 수의 돌고래에서 항생제 내성 증가',
   },
 ];
 
