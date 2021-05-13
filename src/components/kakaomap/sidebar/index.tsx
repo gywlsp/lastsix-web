@@ -40,8 +40,8 @@ export default function SidebarContent({ toggleSidebar }: SidebarContentProps) {
         <LogoText>약 그냥 버리게?</LogoText>
       </LogoWrapper>
       <ButtonWrapper>
-        <NavButton link="/case" text="🍂 환경오염 사례" />
-        <NavButton link="/disposal" text="🌱 종류별 폐기법" />
+        <NavButton link="/pollution-case" text="🍂 환경오염 사례" />
+        <NavButton link="/how-to-dispose" text="🌱 종류별 폐기법" />
       </ButtonWrapper>
       <PinInfo />
       <GuideText>* 서울 내 폐기 장소 검색 가능 </GuideText>
