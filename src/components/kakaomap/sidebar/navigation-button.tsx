@@ -22,15 +22,15 @@ export default function NavigationButton({
 }
 
 const A = styled.a`
-  width: 100%;
+  width: 49%;
 `;
 
 const Button = styled.button`
   width: 100%;
-  height: 2.6rem;
+  padding: 0.8rem 0;
   background-color: ${MINT};
   color: ${WHITE};
-  border: 0.1rem solid ${WHITE};
+  border: none;
   border-radius: 0.2rem;
   margin: 0 0.2rem;
   font-size: 1rem;
