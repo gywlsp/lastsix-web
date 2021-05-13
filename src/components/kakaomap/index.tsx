@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import GlobalLayout from 'src/layouts/global';
 import LoadingOverlay from './loading/overlay';
+import LocationDetailModal from './location-modal';
 
 import { useMapContext, withMapContext } from 'src/contexts/Map';
 
@@ -14,6 +15,7 @@ function KakaoMap() {
   return (
     <GlobalLayout>
       {!(latitude && longitude) && <LoadingOverlay />}
+      <LocationDetailModal />
       <Map id="kakaomap" />
     </GlobalLayout>
   );
