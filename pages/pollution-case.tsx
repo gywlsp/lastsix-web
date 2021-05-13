@@ -19,6 +19,9 @@ export default function Case() {
 }
 
 const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   max-width: 1024px;
   min-height: 100vh;
