@@ -9,13 +9,13 @@ export default function GlobalLayout({ children }: LayoutProps) {
   const router = useRouter();
   const { pathname } = router;
 
-  const [isSidebarOpen, setSidebarOpen] = useState(true);
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   const isHome = pathname === '/';
 
   useEffect(() => {
-    if (window.innerWidth <= 1024) {
-      setSidebarOpen(false);
+    if (window.innerWidth > 1024) {
+      setSidebarOpen(true);
     }
   }, []);
 
