@@ -35,4 +35,5 @@ const Button = styled.button`
   margin: 0 0.2rem;
   font-size: 1rem;
   flex-grow: 1;
+  cursor: pointer;
 `;
