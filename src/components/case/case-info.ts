@@ -5,23 +5,23 @@ export type CaseProps = {
 
 const CASES = [
   {
-    url: 'https://t1.daumcdn.net/cfile/blog/186A67434D93CCD91F',
+    url: 'https://user-images.githubusercontent.com/52834095/118178422-e10c1600-b46e-11eb-9629-d720cf5ff7d0.png',
     text: '토양/수질 오염',
   },
   {
-    url: 'https://pbs.twimg.com/media/EnWRh8qXYAEge95.jpg',
+    url: 'https://user-images.githubusercontent.com/52834095/118178515-000aa800-b46f-11eb-8103-8ef18c3b9b1a.png',
     text: '많은 수의 돌고래에서 항생제 내성 증가',
   },
   {
-    url: 'https://lh3.googleusercontent.com/proxy/4Q5FQ-yoo30mK5HcKTHVrh6Hr7jlfyV7ZAufb85BunrJFzNk61hY5THEJXSA6Tb9SjLB014CZIa0-s46CX8ZffQi27HF1Oyo3vGjslQBRzSD0RJ23x1HJS2XomJoh7W8pJhH75MeO0tNKiUGgRTmKD_FihVmE1vDhA4UttybhIwnSTGs7q1EjM_wruoAmcUGg1XzIFblyF_cOxgz2fBFhDPzqKqLZqaibFtDiYRA07LpDDXl1uEF9dehuHRzt_DIsbAeW4zACN8VYcYJ_Y-uznym12q9f-BGoue0-GFA0VmqOiAw0KmHDesQD_m6qKRbKUwwDYPOtKjHo1EAs4BFQnaDYsj4CKWt8xqBs72QLYPe1Ukw-45QR2WsJw',
+    url: 'https://user-images.githubusercontent.com/52834095/118179393-31d03e80-b470-11eb-861e-eb4321ced3c2.png',
     text: '슈퍼박테리아 양산',
   },
   {
-    url: 'https://lh3.googleusercontent.com/proxy/cD8pBcKCZMt0hR7wXtBBPf-wxPvBUs8HEnmpybb8RXtJBHlIlOHbgKBROui8XMqWPx9O6zIfz8SKpUyAAiuH0rKFO0ngkt6eS1tBNQqyyow5vNUvnO_XfNb2v1L2wIlr7PyxPQbasXlFZ6c',
+    url: 'https://user-images.githubusercontent.com/52834095/118179517-5f1cec80-b470-11eb-96ea-b109ff846d33.png',
     text: '어류 개체 수에 영향',
   },
   {
-    url: 'https://lh3.googleusercontent.com/proxy/hIZrBu5ry7ARATKob-V9EkPe6ZHZuv0zZVc-ocyR70UPD8PdCuolJyqztRFQyhA_faeeO0bICpsbRq5NJ8Qjhmu7y7HqdhgheNEINRr-3Uc6EgCgIu2X-qhGASZMCRtWze473dPrEysZbA',
+    url: 'https://user-images.githubusercontent.com/52834095/118178654-3516fa80-b46f-11eb-8a3d-7293bf9bd4f3.png',
     text: '물고기 중성 변이',
   },
 ];
