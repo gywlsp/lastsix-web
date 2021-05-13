@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: 버그 고치기 🐛
+about: 🐛 버그 고치기 🐛
 title: '[버그] '
 labels: bug
 assignees: ''
