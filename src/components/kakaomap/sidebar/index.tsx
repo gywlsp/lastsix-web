@@ -6,7 +6,7 @@ import NavButton from './navigation-button';
 import PinInfo from './pin-info';
 import Form from './search-form';
 import ResultItem from './search-result';
-import { NAVY } from 'src/constants/colors';
+import { GREY, NAVY } from 'src/constants/colors';
 
 export type SidebarContentProps = {
   toggleSidebar: () => void;
@@ -43,7 +43,8 @@ export default function SidebarContent({ toggleSidebar }: SidebarContentProps) {
         <NavButton link="/case" text="🍂 환경오염 사례" />
         <NavButton link="/disposal" text="🌱 종류별 폐기법" />
       </ButtonWrapper>
-      <PinInfo></PinInfo>
+      <PinInfo />
+      <GuideText>* 서울 내 폐기 장소 검색 가능 </GuideText>
       <Form setQuery={setQuery} />
       <ResultsWrapper>
         {searchResult && <Ul>{renderResults()}</Ul>}
@@ -85,7 +86,7 @@ const LogoText = styled.p`
 `;
 
 const ButtonWrapper = styled.div`
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   display: flex;
   justify-content: space-between;
 `;
@@ -97,3 +98,9 @@ const ResultsWrapper = styled.div`
 `;
 
 const Ul = styled.ul``;
+
+const GuideText = styled.p`
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: ${GREY[500]};
+`;
