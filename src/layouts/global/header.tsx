@@ -9,10 +9,10 @@ export type GlobalHeaderProps = { toggleSidebar: () => void };
 export default function GlobalHeader({ toggleSidebar }: GlobalHeaderProps) {
   return (
     <Wrapper>
-      <Title>💊 약 그냥 버리게?</Title>
       <Button onClick={toggleSidebar}>
         <MenuIcon style={{ width: '2.8rem', height: '2.8rem' }} />
       </Button>
+      <Title>💊 약 그냥 버리게?</Title>
     </Wrapper>
   );
 }
@@ -20,13 +20,13 @@ export default function GlobalHeader({ toggleSidebar }: GlobalHeaderProps) {
 const Wrapper = styled.header`
   position: fixed;
   top: 0;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.6rem 0 2rem;
+  padding: 0 4.8rem 0 2rem;
   height: 4.8rem;
   width: 100%;
-  z-index: 100;
   background-color: ${NAVY};
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 6px 0px;
 `;
@@ -34,7 +34,7 @@ const Wrapper = styled.header`
 const Title = styled.p`
   color: ${IVORY};
   font-size: 1.4rem;
-  margin-top: 0.4rem;
+  margin: 0.4rem auto 0;
 `;
 
 const Button = styled.button`
