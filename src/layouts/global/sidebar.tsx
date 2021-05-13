@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { WHITE } from 'src/constants/colors';
+import SideBarContent from 'src/components/kakaomap/sidebar';
 
 export type GlobalSidebarProps = {
   isOpen: boolean;
@@ -15,7 +16,9 @@ export default function GlobalSidebar({
   return (
     <Overlay isOpen={isOpen}>
       <Space onClick={toggleSidebar} />
-      <Wrapper isOpen={isOpen}></Wrapper>
+      <Wrapper isOpen={isOpen}>
+        <SideBarContent />
+      </Wrapper>
     </Overlay>
   );
 }
