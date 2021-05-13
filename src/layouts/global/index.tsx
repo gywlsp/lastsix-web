@@ -20,7 +20,7 @@ export default function GlobalLayout({ children }: GlobalLayoutProps) {
       setSidebarOpen(false);
     }
   }, []);
-  console.log(isSidebarOpen);
+
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
   };
