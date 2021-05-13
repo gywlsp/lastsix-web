@@ -1,5 +1,6 @@
 ---
 name: New Feature
+about: ✨ 기능 추가하기 ✨
 title: '[추가] '
 labels: feature
 assignees: ''
