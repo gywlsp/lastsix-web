@@ -23,7 +23,7 @@ export default function GlobalSidebar({
 const Overlay = styled.div<{ isOpen: boolean }>`
   @media (max-width: 1024px) {
     position: fixed;
-    z-index: 999;
+    z-index: 200;
     display: flex;
     flex: 1 0 auto;
     width: 100%;
