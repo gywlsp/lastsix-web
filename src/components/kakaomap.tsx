@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 
+import GlobalLayout from 'src/layouts/global';
+
 declare global {
   interface Window {
     kakao: any;
@@ -18,13 +20,15 @@ function KakaoMap() {
   }, []);
 
   return (
-    <div
-      id="kakaomap"
-      style={{
-        width: '100vw',
-        height: '100vh',
-      }}
-    />
+    <GlobalLayout>
+      <div
+        id="kakaomap"
+        style={{
+          width: '100vw',
+          height: '100vh',
+        }}
+      />
+    </GlobalLayout>
   );
 }
 
