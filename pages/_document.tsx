@@ -12,7 +12,7 @@ class MyDocument extends Document {
         <Head>
           <script
             type="text/javascript"
-            src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAO_APP_KEY}`}
+            src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAO_APP_KEY}&libraries=services`}
           />
         </Head>
         <body>
