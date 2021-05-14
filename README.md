@@ -76,12 +76,13 @@
        <br/>
          <figure>
              <img src="https://user-images.githubusercontent.com/52834095/118197614-43bedb00-b48a-11eb-8ffc-0f1e6bd37064.png" width=650/><br/>
-             <figcaption>출발 위치를 설정합니다. (현재 위치 추적도 👌)</figcaption>
+             <figcaption>위치를 설정합니다. (현재 위치 추적도 👌)</figcaption>
          </figure><br/><br/>
          <figure>
              <img src="https://user-images.githubusercontent.com/52834095/118197795-9ac4b000-b48a-11eb-93b5-2ca65394bf17.png" width=650/><br/>
              <figcaption>폐의약품 수거함 위치 중 한 곳을 선택하여 정보를 확인합니다.</figcaption>
          </figure><br/><br/>
+        <a href="https://lastsix-web.vercel.app/"><i>👉 위치 검색하러 가기</i></a><br/><br/><br/>
      </td>
   </tr>
    <tr style = "background-color:#00000000;">
@@ -95,6 +96,7 @@
              <img src="https://user-images.githubusercontent.com/52834095/118198304-8fbe4f80-b48b-11eb-99fd-797878bc2791.png" width=650/><br/>
              <figcaption>약품 종류 별 수거방식을 확인할 수 있습니다. </figcaption>
          </figure><br/><br/>
+        <a href="https://lastsix-web.vercel.app/how-to-dispose"><i>👉 약품 종류별 올바른 폐기방식 확인하러 가기</i></a><br/><br/><br/>
      </td>
   </tr>
    <tr style = "background-color:#00000000;">
@@ -107,7 +109,8 @@
          <figure>
              <img src="https://user-images.githubusercontent.com/52834095/118197980-fc851a00-b48a-11eb-8ca9-210c8578b065.png" width=650/><br/>
              <figcaption>잘못된 폐의약품 처리로 인한 환경오염 사례를 확인할 수 있습니다. (with 포뇨 🧜‍♀️)</figcaption>
-         </figure><br/>
+         </figure><br/><br/>
+        <a href="https://lastsix-web.vercel.app/pollution-case"><i>👉 폐의약품으로 인한 환경오염 사례 확인하러 가기</i></a><br/><br/><br/>
      </td>
   </tr>
 </table>
