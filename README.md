@@ -76,7 +76,7 @@
        <br/>
          <figure>
              <img src="https://user-images.githubusercontent.com/52834095/118197614-43bedb00-b48a-11eb-8ffc-0f1e6bd37064.png" width=650/><br/>
-             <figcaption>출발 위치를 설정합니다. (현재 위치 추적도 👌)</figcaption>
+             <figcaption>위치를 설정합니다. (현재 위치 추적도 👌)</figcaption>
          </figure><br/><br/>
          <figure>
              <img src="https://user-images.githubusercontent.com/52834095/118197795-9ac4b000-b48a-11eb-93b5-2ca65394bf17.png" width=650/><br/>
