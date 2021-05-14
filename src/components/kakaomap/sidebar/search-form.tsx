@@ -44,22 +44,26 @@ export default SearchForm;
 
 const Form = styled.form`
   display: flex;
+  justify-content: space-between;
   margin: 0.4rem 0 1rem;
+  width: 100%;
 `;
 
 const Input = styled.input`
-  width: 18rem;
+  width: 17rem;
   height: 2.6rem;
   border-radius: 0.4rem;
   border: 0.2rem solid ${NAVY};
 `;
 
 const SearchButton = styled.button`
-  background-color: ${NAVY};
-  border: none;
-  border-radius: 0.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 0.4rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  padding: 0;
+  background-color: ${NAVY};
+  border: none;
+  border-radius: 0.4rem;
 `;
