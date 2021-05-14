@@ -55,8 +55,11 @@ export const withMapContext =
         updateMap(latitude, longitude);
       };
 
-      const errorCallback = (error) => {
-        console.log(error);
+      const errorCallback = async (error) => {
+        await updateMap(37.564214, 127.001699);
+        alert(
+          '현위치 정보를 받아올 수 없어 위치가 서울 중심으로 설정되었습니다.\n검색으로 위치를 설정해보세요.'
+        );
       };
 
       navigator.geolocation.getCurrentPosition(
